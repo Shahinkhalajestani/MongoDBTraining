@@ -1,5 +1,5 @@
 version: "3.8"
-service: 
+services: 
   mongodb:
     image: mongo
     container_name: mongodb
@@ -8,7 +8,7 @@ service:
     volumes:
       - data:/data
     environment:
-      - MONGO_INITdb_ROOT_USERNAME=rootuser
+      - MONGO_INITDB_ROOT_USERNAME=rootuser
       - MONGO_INITDB_ROOT_PASSWORD=rootpass
   mongo-express:
     image: mongo-express
